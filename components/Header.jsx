@@ -20,7 +20,7 @@ export default async function Header() {
                 <>
                   <li className="mr-3">
                     <Link href="/create-haiku" className="btn btn-primary">
-                      Create Haikiu
+                      Create Haiku
                     </Link>
                   </li>
                   <li>
