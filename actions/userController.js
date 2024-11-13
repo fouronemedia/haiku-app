@@ -41,8 +41,9 @@ export const login = async function (prevState, formData) {
   // create jwt value
   const ourTokenValue = jwt.sign(
     {
-      skyColor: "blue",
+      skyColor: "green",
       userId: user._id,
+      profileName: user.username,
       exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24
     },
     process.env.JWTSECRET
@@ -111,6 +112,7 @@ export const register = async function (prevState, formData) {
     {
       skyColor: "blue",
       userId: userId,
+      profileName: user.username,
       exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24
     },
     process.env.JWTSECRET

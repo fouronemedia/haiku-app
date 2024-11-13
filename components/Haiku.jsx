@@ -29,30 +29,28 @@ export default function Haiku(props) {
         overlays={[
           {
             position: {
-              x: 30,
-              y: 125,
-              angle: -10,
+              x: 32,
+              y: 302,
               gravity: "north_west"
             },
             text: {
               color: "black",
               fontFamily: "Source Sans Pro",
-              fontSize: 35,
+              fontSize: 45,
               fontWeight: "bold",
               text: `${props.haiku.line1}%0A${props.haiku.line2}%0A${props.haiku.line3}`
             }
           },
           {
             position: {
-              x: 32,
-              y: 125,
-              angle: -10,
+              x: 30,
+              y: 300,
               gravity: "north_west"
             },
             text: {
               color: "white",
               fontFamily: "Source Sans Pro",
-              fontSize: 35,
+              fontSize: 45,
               fontWeight: "bold",
               text: `${props.haiku.line1}%0A${props.haiku.line2}%0A${props.haiku.line3}`
             }
